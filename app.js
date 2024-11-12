@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 require('dotenv').config();
 const authRoutes = require('./routes/authRoutes');
 const todoRoutes = require('./routes/todoRoutes');
+require('./utils/cronJobs');
 
 const app = express();
 app.use(express.json());
